@@ -117,6 +117,7 @@ class MainActivity : ComponentActivity() {
                 verGanar.value = false
                 estadoBotones.forEach{it.value = true}
                 minas.forEach { it.value = asignaMina() }
+		atinados.value = 0
             }) { Text(text = "Reiniciar juego")} })
         }
 
@@ -128,6 +129,7 @@ class MainActivity : ComponentActivity() {
                     verGanar.value = false
                     estadoBotones.forEach{it.value = true}
                     minas.forEach { it.value = asignaMina() }
+		    atinados.value = 0
                 }) { Text(text = "Reiniciar juego")} })
         }
     }
